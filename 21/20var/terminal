@@ -1,0 +1,28 @@
+hasq@hasq-Lenovo-G580:~$ ls
+about_system.txt  lab15.c~                      Документы
+bin               labs                          Загрузки
+deja-dup          PlayOnLinux's virtual drives  Изображения
+kurs              scripts                       лаба20~
+kurs3.c~          test2.c~                      Музыка
+kurs4.c~          test.c~                       Общедоступные
+lab11.c~          testFolder                    примеры из методички зайцева
+lab12.c~          wine                          Рабочий стол
+lab13.c~          workplace
+lab14.c~          Видео
+hasq@hasq-Lenovo-G580:~$ cd labs
+hasq@hasq-Lenovo-G580:~/labs$ ls
+23  25,26    lab12.c  lab14.c  test.c        лаба20
+24  lab11.c  lab13.c  lab15.c  zapas11lab.c
+hasq@hasq-Lenovo-G580:~/labs$ cd
+hasq@hasq-Lenovo-G580:~$ prdir.sh labs
+.
+./25,26
+./24
+./24/8
+./24/4
+./23
+./23/30var
+hasq@hasq-Lenovo-G580:~$ prdir.sh ayy
+Такой папки не существует.
+Формат ввода: bash /home/hasq/scripts/prdir.sh [каталог в котором нужно совершить обход]
+hasq@hasq-Lenovo-G580:~$ 

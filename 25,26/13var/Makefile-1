@@ -1,0 +1,2 @@
+all:
+	gcc lab26.c sort.c udt.c -o program-1

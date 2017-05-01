@@ -1,0 +1,30 @@
+void sort(Key *k, Val *v, const int size) {
+
+        int i;
+        int count[size];
+        Key b1[size];
+        Val b2[size];
+        int max = k[0].key;
+        
+        for (i = 1; i < size; i++)
+	    	if(k[i].key > max) max = k[i].key;
+
+        for (i = 0; i < max; i++)
+            count[k[i].key]++;
+
+        for (i = 1; i < size; i++)
+        	count[i] = count[i] + count[i - 1];
+
+        for (i = size; i > 0; i--) {
+
+ 	    	count[k[i].key] = count[k[i].key] - 1;
+	    	b1[count[k[i].key]] = k[i];
+	    	b2[count[k[i].key]] = v[i];
+        }
+
+        for (i = 0; i < size; i++) {
+        	k[i] = b1[i];
+        	v[i] = b2[i];
+        }
+
+}
